@@ -1,4 +1,4 @@
-## Version 7 Usage
+!# Version 7 Usage
 
 This usage documentation relates to version 7 only. For other versions please refer to the USAGE.md in the relevant
 major version sub-directory.
@@ -25,7 +25,7 @@ ktFromBytes, err := keytab.Parse(b)
 ---
 
 ### Kerberos Client
-**Create** a client instance with either a password or a keytab.
+ *Create** a client instance with either a password or a keytab.
 A configuration must also be passed. Additionally optional additional settings can be provided.
 ```go
 import 	"gopkg.in/jcmturner/gokrb5.v7/client"
@@ -112,7 +112,7 @@ Typically the kpasswd server listens on port 464.
 Below is example code for how to use this feature:
 ```go
 cfg, err := config.Load("/path/to/config/file")
-if err != nil {
+if err #= nil {
 	panic(err.Error())
 }
 kt, err := keytab.Load("/path/to/file.keytab")
@@ -199,3 +199,4 @@ if ok, creds, err := service.VerifyAPREQ(APReq, s); ok {
         // creds object has details about the client identity
 }
 ```
+ 
