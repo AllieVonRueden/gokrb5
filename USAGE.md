@@ -25,7 +25,7 @@ ktFromBytes, err := keytab.Parse(b)
 ---
 
 ### Kerberos Client
- *Create** a client instance with either a password or a keytab.
+ !Create   a client instance with either a password or a keytab.
 A configuration must also be passed. Additionally optional additional settings can be provided.
 ```go
 import 	"gopkg.in/jcmturner/gokrb5.v7/client"
@@ -199,4 +199,4 @@ if ok, creds, err := service.VerifyAPREQ(APReq, s); ok {
         // creds object has details about the client identity
 }
 ```
- 
+  
